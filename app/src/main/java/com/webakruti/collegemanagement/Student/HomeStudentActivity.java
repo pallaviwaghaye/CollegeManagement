@@ -74,14 +74,12 @@ public class HomeStudentActivity extends AppCompatActivity {
                         fragManager.beginTransaction().replace(R.id.home_container, new HomeFragment()).commit();
                         break;
 
-
                     case R.id.navigationMyProfile:
                         toolbarUserDetailsHomeTitle.setText("My Profile");
                         // toolbarStudentDetailsHomeTitle.setText("My details");
                         // SwachhataKendraFragment fragment = new SwachhataKendraFragment();
                         fragManager.beginTransaction().replace(R.id.home_container, new HomeFragment()).commit();
                         break;
-
 
                     case R.id.navigationLogout:
                         AlertDialog.Builder alertDialog = new AlertDialog.Builder(HomeStudentActivity.this);
@@ -108,7 +106,6 @@ public class HomeStudentActivity extends AppCompatActivity {
                         });
                         // Showing Alert Message
                         alertDialog.show();
-
 
                         break;
                 }
